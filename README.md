@@ -2,11 +2,17 @@
 This is a set of instructions for building a Raspberry Pi similar to that used on S/V Pulsar.
 
 Software this can help you install includes:
+
 Kolibri -> Homeschooling
+
 KiwiX - Offline Wikipedia, Gutenberg, etc
+
 Calibre-Web - Ebook server
+
 Samba - File sharing
+
 Jellyfin - Media server
+
 Nginx - Web server
 
 ## Troubleshooting
