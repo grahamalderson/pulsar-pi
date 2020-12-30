@@ -2,8 +2,8 @@
 docker run --detach --restart unless-stopped \
 --name jellyfin \
 --publish 8096:8096 \
---volume /media/pi/usb-drive/apps/jellyfin/config:/config \
---volume /media/pi/usb-drive/media:/data \
+--volume /media/pi/fast/apps/jellyfin/config:/config \
+--volume /media/pi/files/media:/data \
 --volume /opt/vc/lib:/opt/vc/lib \
 --device /dev/vcsm:/dev/vcsm \
 --device /dev/vchiq:/dev/vchiq \
