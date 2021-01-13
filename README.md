@@ -15,6 +15,8 @@ Jellyfin - Media server
 
 Nginx - Web server
 
+Murmur - Voice chat server
+
 ## Troubleshooting
 If your share folder is not working run the following command to fix permissions that the OS butchered and enable Samba to read the USB mount directory:
     $sudo chmod a+rx /media/pi
