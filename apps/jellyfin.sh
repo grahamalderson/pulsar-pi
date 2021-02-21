@@ -6,7 +6,7 @@ docker run --detach --restart unless-stopped \
 --publish 1900:1900/udp \
 --network host \
 --volume /home/pi/apps/jellyfin/config:/config \
---volume /media/pi/files/media:/data \
+--volume /mnt/files/media:/data \
 --volume /opt/vc/lib:/opt/vc/lib \
 --device /dev/vcsm:/dev/vcsm \
 --device /dev/vchiq:/dev/vchiq \
