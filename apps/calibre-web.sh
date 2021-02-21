@@ -7,4 +7,4 @@ docker run --detach --restart unless-stopped \
 -e PUID=1000 \
 -e PGID=1000 \
 -e DOCKER_MODS=linuxserver/calibre-web:calibre \
-ghcr.io/linuxserver/calibre-web
+linuxserver/calibre-web
