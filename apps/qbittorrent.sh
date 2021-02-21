@@ -9,4 +9,4 @@ docker run --detach --restart unless-stopped \
 -e PUID=1000 \
 -e PGID=1000 \
 -e WEBUI_PORT=8082 \
-linuxserver/qbittorrent
+ghcr.io/linuxserver/qbittorrent

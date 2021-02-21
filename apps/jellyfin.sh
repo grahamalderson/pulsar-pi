@@ -15,4 +15,4 @@ docker run --detach --restart unless-stopped \
 --device /dev/video10:/dev/video12 \
 -e PUID=1000 \
 -e PGID=1000 \
-linuxserver/jellyfin:bionic
+ghcr.io/linuxserver/jellyfin:bionic
