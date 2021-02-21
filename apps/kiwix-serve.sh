@@ -3,6 +3,6 @@ docker build https://github.com/kiwix/kiwix-tools.git#:docker/server -t local/ki
 docker run --detach --restart unless-stopped \
 --name kiwix-serve \
 --publish 8081:80 \
---volume /media/pi/edu/apps/kiwix:/data \
+--volume /home/pi/apps/kiwix:/data \
 local/kiwix-serve \
 *.zim
