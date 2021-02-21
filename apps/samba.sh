@@ -6,6 +6,8 @@ docker run --detach --restart unless-stopped \
 --publish 445:445 \
 --volume /media/pi/files/share:/shares/public \
 --volume /media/pi/files:/shares/readonly \
+--volume /media/pi/files/media/books:/shares/library \
 dperson/samba \
 -s "public;/shares/public;yes;no;yes;;;;" \
--s "readonly;/shares/readonly;yes;yes;yes;;;;"
+-s "readonly;/shares/readonly;yes;yes;yes;;;;" \
+-s "library;/shares/library;yes;no;yes;;;;"
