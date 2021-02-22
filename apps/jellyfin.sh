@@ -8,7 +8,7 @@ docker run --detach --restart unless-stopped \
 --volume /home/pi/apps/jellyfin/config:/config \
 --volume /mnt/files/media:/data \
 --volume /opt/vc/lib:/opt/vc/lib \
---device /dev/vcsm:/dev/vcsm \
+--device /dev/vcsm-cma:/dev/vcsm-cma \
 --device /dev/vchiq:/dev/vchiq \
 --device /dev/video10:/dev/video10 \
 --device /dev/video10:/dev/video11 \
