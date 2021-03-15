@@ -6,7 +6,7 @@ docker run --detach --restart unless-stopped \
 --publish 445:445 \
 --volume /mnt/files/share:/shares/public \
 --volume /mnt/files:/shares/readonly \
---volume /mnt/files/media/books:/shares/library \
+--volume /home/pi/apps/calibre-web/books:/shares/library \
 dperson/samba \
 -s "public;/shares/public;yes;no;yes;;;;" \
 -s "readonly;/shares/readonly;yes;yes;yes;;;;" \
