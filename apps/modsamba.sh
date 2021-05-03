@@ -5,11 +5,13 @@ docker run --detach --restart unless-stopped \
 --publish 445:445 \
 --volume /mnt/files/share:/shares/public \
 --volume /mnt/files:/shares/files \
+--volume /home/pi/apps/qbittorrent/downloads:/shares/qbittorrent \
 --volume /home/pi/apps/calibre-web/books:/shares/library \
 -e USERID=1000 \
 -e GROUPID=1000 \
 dperson/samba \
 -s "public;/shares/public;yes;no;yes;;;;" \
 -s "readonly;/shares/files;yes;yes;yes;;;;" \
+-s "qbittorrent;/shares/qbittorrent;yes;no;yes;;;;" \
 -s "files;/shares/files;yes;no;yes;;;;" \
 -s "library;/shares/library;yes;no;yes;;;;"
